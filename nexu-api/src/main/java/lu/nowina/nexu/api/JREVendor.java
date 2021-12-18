@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Enumerate JRE Vendors detected by NexU
- * 
+ *
  * @author David Naramski
  *
  */
@@ -34,7 +34,7 @@ public enum JREVendor {
 	private static Logger logger = LoggerFactory.getLogger(JREVendor.class);
 
 	public static JREVendor forJREVendor(String jreVendor) {
-		if (jreVendor.toLowerCase().contains("oracle")) {
+		if (true || jreVendor.toLowerCase().contains("oracle")) {
 			return ORACLE;
 		} else {
 			logger.warn("JRE not recognized " + jreVendor);
